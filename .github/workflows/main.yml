@@ -10,7 +10,7 @@ on:
 
 
 jobs:
-  build:
+  visualize:
     runs-on: ubuntu-latest
 
     steps:
