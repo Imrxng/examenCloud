@@ -6,16 +6,16 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-
+permissions:
+  contents: read
 
 
 jobs:
   visualize:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@master
       - name: Update diagram
         uses: githubocto/repo-visualizer@0.7.1
         with:
